@@ -1,0 +1,15 @@
+structlog
+langchain
+langgraph
+langgraph-checkpoint-postgres
+langgraph-store-postgres
+psycopg[binary,pool]
+langchain-community
+langchain-core
+langchain_google_genai
+pydantic
+fastapi[standard]
+pydataui[all]
+python-dotenv
+uvicorn
+granian
