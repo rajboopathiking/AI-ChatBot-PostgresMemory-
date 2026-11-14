@@ -49,10 +49,10 @@ class PostgresResource:
 
   async def close(self):
     if self.pool is not None:
-      self.pool.close()
+      await self.pool.close()
     if self.store is not None:
-      self.store_cm.__aexit__()
-
+      await self.store_cm.__aexit__(None,None,None)
+      
     logger.info("closed sucessfully")
 
 
